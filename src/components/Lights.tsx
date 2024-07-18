@@ -1,6 +1,8 @@
 "use client"
 
 import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts"
+import { Toggle } from "@/components/ui/toggle"
+
 
 import {
   Card,
@@ -32,29 +34,17 @@ const chartConfig = {
 
 export default function Component() {
   return (
-    <Card className="h-auto m-1">
+    <Card className="flex-1 m-1">
       <CardHeader className="items-center pb-4">
-        <CardTitle>Energy Usage</CardTitle>
+        <CardTitle>Light Control</CardTitle>
         <CardDescription>
-          Energy Usage Brakedown of the past month
+          Control You Smart Lights and Light Switches
         </CardDescription>
       </CardHeader>
-      <CardContent className="pb-0">
-        <ChartContainer
-          config={chartConfig}
-          className="mx-auto aspect-square max-h-[250px]"
-        >
-          <RadarChart data={chartData}>
-            <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-            <PolarAngleAxis dataKey="month" />
-            <PolarGrid />
-            <Radar
-              dataKey="desktop"
-              fill="var(--color-desktop)"
-              fillOpacity={0.6}
-            />
-          </RadarChart>
-        </ChartContainer>
+      <CardContent className="flex">
+        <Toggle value="a" className="ml-auto mr-2">Living Room</Toggle>
+        <Toggle value="b" className="mx-2">Kitchen</Toggle>
+        <Toggle value="c" className="mr-auto ml-2">Master Bedroom</Toggle>
       </CardContent>
     </Card>
   )
