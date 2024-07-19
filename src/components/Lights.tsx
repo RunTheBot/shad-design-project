@@ -41,10 +41,19 @@ export default function Component() {
           Control You Smart Lights and Light Switches
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex">
-        <Toggle value="a" className="ml-auto mr-2">Living Room</Toggle>
-        <Toggle value="b" className="mx-2">Kitchen</Toggle>
-        <Toggle value="c" className="mr-auto ml-2">Master Bedroom</Toggle>
+      <CardContent className="flex flex-wrap">
+        <Toggle value="a" className="m-auto">Living Room</Toggle>
+        <Toggle value="b" className="m-auto">Kitchen</Toggle>
+        <Toggle value="c" className="m-auto">Master Bedroom</Toggle>
+        <Toggle value="d" className="m-auto">Upstairs Bedroom 1</Toggle>
+        <Toggle value="e" className="m-auto">Upstairs Bedroom 2</Toggle>
+        <Toggle value="f" className="m-auto">Upstairs Bedroom 3</Toggle>
+        <Toggle value="g" className="m-auto">Bathroom</Toggle>
+        <Toggle value="h" className="m-auto">Office</Toggle>
+        <Toggle value="i" className="m-auto">Garage</Toggle>
+        <Toggle value="j" className="m-auto">Backyard</Toggle>
+        <Toggle value="k" className="m-auto">Front Yard</Toggle>
+        <Toggle value="l" className="m-auto">Porch</Toggle>
       </CardContent>
     </Card>
   )

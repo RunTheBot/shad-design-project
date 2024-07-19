@@ -5,26 +5,31 @@
  */
 "use client"
 
-import { JSX, SVGProps, useState } from "react"
+import { JSX, SetStateAction, SVGProps, useState } from "react"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Slider } from "@/components/ui/slider"
 import { Switch } from "@/components/ui/switch"
+import { Button } from "./ui/button"
 
 export default function Component() {
   const [temperature, setTemperature] = useState(21)
   const [ecoMode, setEcoMode] = useState(false)
+  const [mode, setMode] = useState("heat")
   const handleTemperatureChange = (value: number[]) => {
     setTemperature(value[0])
   }
   const handleEcoModeToggle = () => {
     setEcoMode((prevState) => !prevState)
   }
+  const handleModeChange = (newMode: SetStateAction<string>) => {
+    setMode(newMode)
+  }
   return (
-    <Card className="w-full max-w-md bg-background p-6 rounded-lg shadow-lg ">
+    <Card className="w-auto m-1">
       <CardHeader>
         <CardTitle>Smart Thermostat</CardTitle>
       </CardHeader>
-      <CardContent className="grid gap-6">
+      <CardContent className="flex flex-col gap-6">
         <div className="flex items-center justify-between">
           <div className="text-4xl font-bold">{temperature}°</div>
           <div className="flex items-center gap-2">
@@ -55,6 +60,37 @@ export default function Component() {
           Eco mode is disable. Enable it to automatically adjusted to be more energy-efficient.
         </div>
       }
+      <div className="flex-grow">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <ThermometerIcon className="w-6 h-6 text-muted-foreground" />
+            <span className="text-muted-foreground">Mode</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Button
+              variant={mode === "heat" ? "default" : "outline"}
+              onClick={() => handleModeChange("heat")}
+              className="px-3 py-1 text-sm"
+            >
+              Heat
+            </Button>
+            <Button
+              variant={mode === "cool" ? "default" : "outline"}
+              onClick={() => handleModeChange("cool")}
+              className="px-3 py-1 text-sm"
+            >
+              Cool
+            </Button>
+            <Button
+              variant={mode === "away" ? "default" : "outline"}
+              onClick={() => handleModeChange("away")}
+              className="px-3 py-1 text-sm"
+            >
+              Away
+            </Button>
+          </div>
+        </div>
+      </div>
       </CardContent>
     </Card>
   )
