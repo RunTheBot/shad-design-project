@@ -36,7 +36,7 @@ export default function Component() {
       <CardHeader className="items-center pb-4">
         <CardTitle>Energy Usage</CardTitle>
         <CardDescription>
-          Energy Usage Brakedown of the past month
+          Energy Usage breakdown of the past month
         </CardDescription>
       </CardHeader>
       <CardContent className="pb-0">

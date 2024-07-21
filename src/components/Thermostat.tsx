@@ -25,7 +25,7 @@ export default function Component() {
     setMode(newMode)
   }
   return (
-    <Card className="w-auto m-1">
+    <Card className="w-1/4 m-1">
       <CardHeader>
         <CardTitle>Smart Thermostat</CardTitle>
       </CardHeader>
@@ -57,7 +57,7 @@ export default function Component() {
           </div>
         ) :
         <div className="text-sm text-muted-foreground">
-          Eco mode is disable. Enable it to automatically adjusted to be more energy-efficient.
+          Eco mode is disable. Enable it to automatically adjust temperature to be more energy-efficient.
         </div>
       }
       <div className="flex-grow">

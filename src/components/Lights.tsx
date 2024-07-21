@@ -42,18 +42,18 @@ export default function Component() {
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-wrap">
-        <Toggle value="a" className="m-auto">Living Room</Toggle>
-        <Toggle value="b" className="m-auto">Kitchen</Toggle>
-        <Toggle value="c" className="m-auto">Master Bedroom</Toggle>
-        <Toggle value="d" className="m-auto">Upstairs Bedroom 1</Toggle>
-        <Toggle value="e" className="m-auto">Upstairs Bedroom 2</Toggle>
-        <Toggle value="f" className="m-auto">Upstairs Bedroom 3</Toggle>
-        <Toggle value="g" className="m-auto">Bathroom</Toggle>
-        <Toggle value="h" className="m-auto">Office</Toggle>
-        <Toggle value="i" className="m-auto">Garage</Toggle>
-        <Toggle value="j" className="m-auto">Backyard</Toggle>
-        <Toggle value="k" className="m-auto">Front Yard</Toggle>
-        <Toggle value="l" className="m-auto">Porch</Toggle>
+        <Toggle value="a" className="mx-auto my-1">Living Room</Toggle>
+        <Toggle value="b" className="mx-auto my-1">Kitchen</Toggle>
+        <Toggle value="c" className="mx-auto my-1">Master Bedroom</Toggle>
+        <Toggle value="d" className="mx-auto my-1">Upstairs Bedroom 1</Toggle>
+        <Toggle value="e" className="mx-auto my-1">Upstairs Bedroom 2</Toggle>
+        <Toggle value="f" className="mx-auto my-1">Upstairs Bedroom 3</Toggle>
+        <Toggle value="g" className="mx-auto my-1">Bathroom</Toggle>
+        <Toggle value="h" className="mx-auto my-1">Office</Toggle>
+        <Toggle value="i" className="mx-auto my-1">Garage</Toggle>
+        <Toggle value="j" className="mx-auto my-1">Backyard</Toggle>
+        <Toggle value="k" className="mx-auto my-1">Front Yard</Toggle>
+        <Toggle value="l" className="mx-auto my-1">Porch</Toggle>
       </CardContent>
     </Card>
   )

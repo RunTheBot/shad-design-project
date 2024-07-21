@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 
 const Hero: React.FC = () => {
@@ -8,6 +9,13 @@ const Hero: React.FC = () => {
       {/* video as background */}
 
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center'>
+        <Image
+          className='group inline-flex items-center justify-center px-2 py-2'
+          src="/logo.png"
+          width={200}
+          height={200}
+          alt="hello"
+        />
         <h1 className='group inline-flex text-6xl h-10 w-max items-center justify-center rounded-md px-2 py-2 font-medium text-slate-50'>
           Electrohm
         </h1>
