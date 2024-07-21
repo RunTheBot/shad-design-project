@@ -15,7 +15,7 @@ export default function Home() {
         <Thermostat/>
         <PowerSaver/>
       </div>
-      <div className="flex">
+      <div className="flex flex-1">
 
         <PowerUsage/>
         <PowerRadar/>

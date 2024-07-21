@@ -5,6 +5,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link"
+import Image from 'next/image';
 
 import {
   NavigationMenu,
@@ -24,14 +25,19 @@ const DemoNavBar: React.FC = () => {
   return (
   <div className="flex items-center py-2 px-2 ">
       <div className="flex-shrink-0 px-2">
-        <FcGoogle className="text-3xl z-50" />
+        <Image
+          src="/logo.png"
+          width={45}
+          height={45}
+          alt="hello"
+        />
       </div>
       <NavigationMenu className="justify-center">
         <NavigationMenuList>
           <NavigationMenuItem >
             <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Name
+                Home
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>

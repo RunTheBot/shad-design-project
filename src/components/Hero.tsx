@@ -9,10 +9,10 @@ const Hero: React.FC = () => {
 
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center'>
         <h1 className='group inline-flex text-6xl h-10 w-max items-center justify-center rounded-md px-2 py-2 font-medium text-slate-50'>
-          Lorem Ipsum
+          Electrohm
         </h1>
         <h2 className='m-8 group inline-flex text-3xl h-10 w-max items-center justify-center rounded-md px-2 py-2 font-medium text-slate-50'>
-          Lorem Ipsum
+          A step to green energy starting with your home
         </h2>
         <a href='/demo'>
           <Button className=''>

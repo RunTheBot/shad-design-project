@@ -26,7 +26,6 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased dark",
           fontSans.variable
         )}
-
       >
         {children}
       </body>

@@ -117,7 +117,7 @@ const chartConfig = {
     label: "Visitors",
   },
   desktop: {
-    label: "Desktop",
+    label: "Power",
     color: "hsl(var(--chart-1))",
   }
 } satisfies ChartConfig
@@ -142,9 +142,9 @@ export default function Component() {
     <Card className="flex-1 m-1">
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row ">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
-          <CardTitle>Area Chart - Interactive</CardTitle>
+          <CardTitle>Power usage</CardTitle>
           <CardDescription>
-            Showing total visitors for the last 3 months
+            Showing total power usage for the last 3 months
           </CardDescription>
         </div>
       </CardHeader>
