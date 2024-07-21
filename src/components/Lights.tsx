@@ -38,7 +38,7 @@ export default function Component() {
       <CardHeader className="items-center pb-4">
         <CardTitle>Light Control</CardTitle>
         <CardDescription>
-          Control You Smart Lights and Light Switches
+          Control Your Smart Lights and Light Switches
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-wrap">
